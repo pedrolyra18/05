@@ -21,7 +21,7 @@ export default function HomeScreen() {
 
       {/* Seção de botões em grid 2x2 centralizado */}
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/alert')}>
           <MaterialIcons name="cable" size={30} color="black" style={styles.buttonIcon} />
           <Text style={styles.buttonText}>Alertas recentes</Text>
         </TouchableOpacity>
@@ -33,7 +33,7 @@ export default function HomeScreen() {
           <Feather name="map" size={30} color="black" style={styles.buttonIcon} />
           <Text style={styles.buttonText}>Mapa região</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/alert')}>
           <MaterialCommunityIcons name="police-badge-outline" size={30} color="black" style={styles.buttonIcon} />
           <Text style={styles.buttonText}>Avisar autoridades</Text>
         </TouchableOpacity>
@@ -86,13 +86,13 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     justifyContent: 'center',
     alignItems: 'center',
-    paddingVertical: 20,
+    paddingVertical: 80,
     paddingHorizontal: 10,
   },
   button: {
     backgroundColor: '#f0e68c',
     borderRadius: 20,
-    padding: 15,
+    padding: 30,
     width: '40%', // Ajustado para caber melhor no centro
     alignItems: 'center',
     flexDirection: 'row',

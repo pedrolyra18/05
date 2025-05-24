@@ -34,7 +34,7 @@ export default function NotificationsScreen() {
       <View style={styles.notificationContainer}>
         {notifications.map((notif, index) => (
           <View key={index} style={styles.notificationItem}>
-            <MaterialIcons name={notif.icon} size={20} color={notif.color} style={styles.notificationIcon} />
+            <MaterialIcons name={notif.icon} size={30} color={notif.color} style={styles.notificationIcon} />
             <Text style={styles.notificationText}>{notif.text}</Text>
           </View>
         ))}
@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#3e6180',
   },
   title: {
+    marginLeft: 30,
     color: 'white',
     fontSize: 30,
     fontWeight: 'bold',
@@ -84,7 +85,7 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 30,
     textAlign: 'center',
-    marginVertical: 10,
+    marginVertical: 20,
   },
   notificationContainer: {
     flex: 1,
@@ -101,8 +102,8 @@ const styles = StyleSheet.create({
   },
   notificationText: {
     color: 'black',
-    fontWeight: 'condensed',
     fontSize: 22,
+    width: '90%',
   },
   bottomBar: {
     flexDirection: 'row',

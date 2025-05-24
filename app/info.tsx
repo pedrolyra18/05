@@ -59,19 +59,12 @@ const styles = StyleSheet.create({
     fontSize: 22,
     textAlign: 'center',
     marginHorizontal: 20,
-    marginBottom: 20,
-  },
-  technicianImage: {
-    width: '80%',
-    height: 200,
-    resizeMode: 'contain',
-    alignSelf: 'center',
+    marginVertical: 20,
   },
   cableImage: {
-    width: '80%',
-    height: 150,
+    width: '100%',
+    marginTop: 40,
     resizeMode: 'contain',
     alignSelf: 'center',
-    marginBottom: 20,
   },
 });

@@ -9,7 +9,7 @@ export default function SupportEmergencyScreen() {
       {/* Cabeçalho */}
       <View style={styles.header}>
         <Text style={styles.title}>Suporte e emergência</Text>
-        <Ionicons name="call" size={70} color="white" />
+        <Ionicons name="call" size={60} color="white" />
       </View>
 
       {/* Descrição */}
@@ -73,20 +73,22 @@ const styles = StyleSheet.create({
   },
   description: {
     color: 'white',
-    fontSize: 18,
+    fontSize: 22,
+    fontWeight: 'bold',
     textAlign: 'center',
-    marginVertical: 20,
+    marginTop: 50,
   },
   buttonContainer: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
+    gap: 50,
   },
   button: {
     backgroundColor: '#f0e68c',
     borderRadius: 20,
-    padding: 15,
+    padding: 20,
     width: '80%',
     alignItems: 'center',
     flexDirection: 'row',
@@ -103,7 +105,7 @@ const styles = StyleSheet.create({
   },
   warningText: {
     color: 'white',
-    fontSize: 14,
+    fontSize: 16,
     textAlign: 'center',
     marginHorizontal: 20,
     marginBottom: 20,
@@ -112,7 +114,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ff0000',
     borderRadius: 10,
     padding: 10,
-    width: '50%',
+    width: '60%',
     alignItems: 'center',
     alignSelf: 'center',
     marginBottom: 20,
